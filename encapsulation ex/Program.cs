@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace encapsulation_ex
 {
@@ -10,6 +6,10 @@ namespace encapsulation_ex
     {
         static void Main(string[] args)
         {
+            Animal Dog = new Animal(); // "new Animal();" is called the constructor.
+            Dog.Age = 12;
+            // Negative values are prevented by the if statement in the Animal class.
+            Console.ReadKey();
         }
     }
 }
