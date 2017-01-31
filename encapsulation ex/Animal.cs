@@ -8,6 +8,22 @@ namespace encapsulation_ex
 {
     class Animal
     {
+        private string type;
+        private string color;
+        private string weight;
+        private string height;
+        
+        private int NumOfLegs;
+        public virtual void move() // The methods are public in order to be available for calling.
+        {
+            Console.WriteLine("Moved");
+        }
+        public void makeNoise()
+        {
+            Console.WriteLine("Made noise");
+        }
+
+
         private int age; // This cannot be assigned in Main because of the private scope. Member variables are not capitalized.
         public int Age // This on the other hand can. This is a property and is capitalized. It is "int" because it returns an integer.
         {
